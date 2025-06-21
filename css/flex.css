@@ -1,0 +1,21 @@
+.flex {
+    display: flex;
+  }
+  .shrink {
+    flex-shrink: 0;
+  }
+  .grow {
+    flex-grow: 1;
+    min-height: 0;
+    min-width: 0;
+  }
+  .fl_hor_ctr{
+    align-items: center;
+  }
+  .fl_ctr{
+    justify-content: center;
+    align-items: center;
+  }
+  .flstr{
+    justify-content: flex-start;
+  }

@@ -1,0 +1,25 @@
+body{
+    position: relative;
+}
+body *,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home_ctr{
+    height: 600px;
+}
+.com_hgt{
+    height: 670px;
+}
+.hdr_inner,.home_inner,.about_inner,.skill_ctr,.experi_ctr{
+    padding-inline: 150px;
+}
+
+.common_hdr{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: calc(var(--base_font) + 21px);
+    font-weight: 700;
+    color: var(--black);
+  }

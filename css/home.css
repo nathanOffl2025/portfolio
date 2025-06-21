@@ -1,0 +1,50 @@
+.home_inner{
+    position: relative;
+    padding-block: 120px 0px; 
+    background: linear-gradient(rgba(60, 35, 239, .95), rgba(60, 35, 239, .95)), url(/img/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fl_txt,.rle_txt,.nme_txt{
+color: var(--white);
+margin-top:0;
+margin-bottom:15px;
+font-weight: 600;
+}
+.rle_txt,.nme_txt{
+    letter-spacing: 1.2px;
+}
+.fl_txt{
+   
+   font-size:  calc(var(--base_font) + 11px);
+
+}
+.nme_txt{
+    font-weight: 700;
+    font-size:  calc(var(--base_font) + 46px);
+}
+.rle_txt{
+    font-size:  calc(var(--base_font) + 21px);
+}
+.cv_btn{
+    margin-right: 15px;
+}
+.cv_btn,.con_btn{
+    font-weight: 600;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: var(--thprime);
+    margin-top: 35px;
+    background: var(--white);
+    box-shadow: inset 0 0 0 50px var(--white);
+    border:2px solid transparent;
+    transition: ease-out 0.3s;
+}
+.cv_btn:hover,.con_btn:hover{
+    color: var(--white);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 var(--white);
+    border-color: var(--white);
+}
+

@@ -1,0 +1,61 @@
+.skill_ctr{
+    padding-block: 20px;
+    overflow:hidden;
+}
+.skill_inner{
+    padding: 10px;
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    scroll-behavior: smooth;  /* Smooth scrolling */
+}
+.skill img{
+    height: 100px;
+    width: 100px;
+}
+.skill_inner::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar in WebKit-based browsers */
+  }
+.skill{
+    /* display: inline-block; */
+    flex: 0 0 33.33%;  /* Show 3 items at a time (33.33% of the container width) */
+  text-align: center;
+    cursor: pointer;
+    width:300px;
+    padding: 20px 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-right: 20px;
+}
+.img_txt{
+    color: var(--black);
+    font-size: 20px;
+    text-align: center;
+    margin-block: 10px;
+}
+/* Dot Indicators */
+.dot-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color:var(--thprime); /* Active dot color */
+  }
+  .skill_txt{
+    text-align: center;
+    font-size: calc(var(--base_font) + 21px);
+    font-weight: 700;
+    color: var(--black);
+  }
+  .skill_des_txt{
+    line-height: 25px;
+    letter-spacing: 1.2px;
+  }

@@ -1,0 +1,106 @@
+.exper_inner{
+    position: relative;
+}
+.exper_inner::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--thprime);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+.left{
+    left: 0;
+    padding-right: 30px;
+}
+.right{
+    left: 50%;
+    padding-left: 30px;
+}
+.timeline_item{
+    
+    position: relative;
+    width: 50%;
+   
+    margin-bottom: 30px;
+}
+.timeline_item::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border: 10px solid;
+    border-color: transparent transparent transparent #dddddd;
+    top: 46px;
+    
+}
+.right::before{
+    left: 10px;
+    border-color: transparent #dddddd transparent transparent;
+}
+.left::before{
+    right: 10px;
+    border-color: transparent transparent transparent #dddddd;
+}
+.timeline_text{
+    padding: 30px;
+    position: relative;
+   box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+}
+.timeline_text::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 45px;
+    right: -45px;
+    background: var(--white);
+    border: 2px solid var(--thprime);
+    border-radius: 16px;
+    z-index: 1;
+
+}
+.company{
+    font-style: italic;
+    font-size: calc(var(--base_font) + 2px);
+}
+.role{
+    color: var(--black);
+}
+.role,.company{
+    margin-bottom: 10px;
+}
+.timeline_text_left{
+    border-right: 5px solid #dddddd;
+}
+.timeline_text_right{
+    border-left: 5px solid #dddddd;
+}
+.timeline_text_right::after{
+    left: -45px;
+}
+.timeline_left{
+    text-align: left;
+    left: calc(100% + 55px);
+}
+.timeline_right{
+    text-align: right;
+    right: calc(100% + 55px);
+}
+.timeline_date{
+   
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--thprime);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.company_about{
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}
